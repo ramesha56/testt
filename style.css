@@ -1,0 +1,235 @@
+/* General Styles */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo */
+#logo {
+    font-weight: 500;
+    color: white;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#logo:hover {
+    color: rgb(192, 110, 110);
+}
+
+/* Background */
+#background {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navbar */
+#navbar {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+nav {
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.footerul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+    margin: 20px 0;
+}
+
+li {
+    list-style: none;
+    margin: 0 10px; /* Spacing between items */
+}
+
+.footera {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.footera:hover {
+    color: rgb(192, 110, 110);
+}
+
+.footerh2 {
+    text-align: center;
+    color: #e08141;
+    margin-top: 20px;
+}
+
+.footerp {
+    color: #eee;
+    text-align: center; /* Centered text in footer */
+}
+
+.footerhr {
+    color: white;
+    width: 50%;
+    margin: 20px auto;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+}
+
+#button {
+    background-color: #f1f1f1;
+    color: rgba(42, 151, 240, 0.61);
+}
+
+#allbtn, #east, #north, #south, #west {
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+}
+
+#east:hover, #north:hover, #south:hover, #west:hover {
+    color: rgb(206, 148, 148);
+}
+
+/* Headers */
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-align: center; /* Centered header */
+}
+
+h1:hover {
+    color: rgb(192, 110, 110);
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center; /* Centered header */
+}
+
+h3:hover {
+    color: rgb(173, 23, 23);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    #logo {
+        font-size: x-large;
+    }
+    
+    #navbar {
+        font-size: 16px;
+    }
+
+    .footerul {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .footerh2, .footerp {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    #background {
+        height: 400px;
+    }
+
+    button {
+        width: 90%; /* Adjust button width */
+    }
+
+    .footerul {
+        flex-direction: column; /* Stack items vertically */
+    }
+}
+
+@media (max-width: 768px) {
+    #logo {
+        font-size: large;
+    }
+    
+    nav {
+        height: 80px;
+        flex-direction: column; /* Stack nav items vertically on small screens */
+    }
+
+    #background {
+        height: 300px;
+    }
+
+    .footerul {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .footerh2, .footerp {
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: large;
+    }
+
+    h3 {
+        font-size: medium;
+    }
+
+    button {
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    #logo {
+        font-size: medium;
+    }
+    
+    nav {
+        height: auto;
+    }
+
+    .footerh2, .footerp {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: medium;
+    }
+    
+    h3 {
+        font-size: small;
+    }
+
+    button {
+        height: 40px;
+        font-size: 12px;
+    }
+}
